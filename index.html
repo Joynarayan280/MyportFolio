@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+        /* MENU ICON STYLING */
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* NAVBAR DEFAULT STYLING */
+        .navbar {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* MOBILE STYLES */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #051129;
+                flex-direction: column;
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                padding: 0;
+                transition: max-height 0.3s ease, padding 0.3s ease;
+            }
+
+            .navbar.show {
+                max-height: 500px;
+                padding: 20px 0;
+            }
+
+            .navbar a {
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Joynarayan Portfolio</a>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Skill</a>
+            <a href="#projects" style="--i:4">Project</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hello, it's me</h3>
+            <h1>Joynarayan Paira</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>A web designer with over 3 years of experience.
+                <br>My expertise includes website creation, frontend design, and app development.
+            </p>
+            <div class="home-sci">
+                <!-- Social icons can go here -->
+                <a href="https://www.facebook.com/login.php/" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-gmail'></i></a>
+                <a href="https://web.whatsapp.com/" style="--i:10"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <a href="MyCvresume_CV2_merged (1).pdf" class="btn-box">Dowload Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="me3.jpg" alt="My Photo">
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="me3.jpg" alt="Photo of me">
+        </div>
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Full Stack Developer!</h4>
+            <p>Hi, I'm Joynarayan Paira, a passionate and detail-oriented Full Stack Developer with a strong foundation
+                in both front-end and back-end technologies. Currently pursuing my Master of Computer Applications
+                (MCA), I specialize in building responsive, user-friendly websites and dynamic web applications.I’m a
+                continuous learner, always excited about exploring new tools and frameworks. My goal is to join a
+                forward-thinking team where I can contribute, grow, and build impactful digital solutions.</p>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+    </section>
+    <section id="servicess">
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+
+                <!-- SERVICE CARDS inside .services-list -->
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code' style='color:#00eeff'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Skilled in crafting user-centric UI/UX designs that enhance usability, accessibility, and
+                            visual harmony.</p>
+                         <a href="upi_qr_70.png" class="read" target="_blank" rel="noopener noreferrer">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bx-crop' style='color: #00eeff;'></i>
+                        <h2>Web Development</h2>
+                        <p>Building responsive and dynamic websites using modern front-end and back-end technologies to
+                            deliver seamless user experiences.</p>
+                        <a href="upi_qr_70.png" class="read">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-apple" style="color: #00eeff;"></i>
+                        <h2>App Design</h2>
+                        <p>Designing intuitive and engaging mobile app interfaces that prioritize user experience and
+                            functionality.</p>
+                        <a href="upi_qr_70.png" class="read">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2 class="sub-title">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <i class="fa-brands fa-github" style="color: #00eeff; font-size: 60px;"></i>
+                <h3>Portfolio</h3>
+                <p>A secure login system using HTML,CSS and JavaScript for user authentication.</p>
+                <a href="https://your-login-system-link.com" class="read" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <i class="fa-brands fa-github" style="color: #00eeff; font-size: 60px;"></i>
+                <h3>Weather App</h3>
+                <p>Weather forecast app using OpenWeatherMap API, built with JavaScript.</p>
+                <a href="https://your-weather-app-link.com" class="read" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <i class="fa-brands fa-github" style="color: #00eeff; font-size: 60px;"></i>
+                <h3>Carpenter Management</h3>
+                <p>This is website where users can view available furniture by category and track the quantity of wood items delivered to customer.</p>
+                <a href="https://your-login-system-link.com" class="read" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <section class="skills-section">
+        <!-- Technical Skills -->
+        <div class="skills-container" style="background-color: #081b29">
+            <h2 class="section-heading" style="color: #fff;">Technical Skills</h2>
+            <div class="technical-skills">
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-html5" style="color: orange;"></i>
+                    <span style="color: #fff;">HTML</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 90%;">
+                            <span class="percent-label">90%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-css3-alt" style="color: #147bbc;"></i>
+                    <span style="color: #fff;">CSS</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 85%;">
+                            <span class="percent-label">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-js" style="color: #b0bc1e;"></i>
+                    <span style="color: #fff;">JavaScript</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 80%;">
+                            <span class="percent-label">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-python" style="color: #3876ac;"></i>
+                    <span style="color: #fff;">Python</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 75%;">
+                            <span class="percent-label">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-java" style="color: #d47d21;"></i>
+                    <span style="color: #fff;">Java</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 70%;">
+                            <span class="percent-label">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <div class="skills-container" style="background-color: #081b29">
+            <h2 class="section-heading" style="color: #fff;">Professional Skills</h2>
+            <div class="radial-skill-box">
+                <div class="radial-skill" data-percent="90">
+                    <svg>
+                        <circle cx="70" cy="70" r="60" class="base"></circle>
+                        <circle cx="70" cy="70" r="60" class="progress"></circle>
+                    </svg>
+                    <div class="skill-text"><span style="color: #fff;">90%</span>
+                        <p style="color: #fff;">Creativity</p>
+                    </div>
+                </div>
+                <div class="radial-skill" data-percent="65">
+                    <svg>
+                        <circle cx="70" cy="70" r="60" class="base"></circle>
+                        <circle cx="70" cy="70" r="60" class="progress"></circle>
+                    </svg>
+                    <div class="skill-text"><span style="color: #fff;">65%</span>
+                        <p style="color: #fff;">Communication</p>
+                    </div>
+                </div>
+                <div class="radial-skill" data-percent="75">
+                    <svg>
+                        <circle cx="70" cy="70" r="60" class="base"></circle>
+                        <circle cx="70" cy="70" r="60" class="progress"></circle>
+                    </svg>
+                    <div class="skill-text"><span style="color: #fff;">75%</span>
+                        <p style="color: #fff;">Problem Solving</p>
+                    </div>
+                </div>
+                <div class="radial-skill" data-percent="85">
+                    <svg>
+                        <circle cx="70" cy="70" r="60" class="base"></circle>
+                        <circle cx="70" cy="70" r="60" class="progress"></circle>
+                    </svg>
+                    <div class="skill-text"><span style="color: #fff;">85%</span>
+                        <p style="color: #fff;">Teamwork</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="certifications-section">
+        <h2 class="sub-title">My <span>Certifications</span></h2>
+        <div class="certification-container">
+
+            <div class="certification-card">
+                <h3>NPTEL – Privacy and Security in Online Social Media</h3>
+                <p>Issued by: NPTEL | Jan–Apr 2025</p>
+                <a href="NPTEL25CS79S54950109304482879-5_compressed.pdf" class="read" target="_blank">View
+                    Certificate</a>
+            </div>
+
+            <div class="certification-card">
+                <h3>Cyber Security Job Simulation</h3>
+                <p>Issued by: Forage | June 2025</p>
+                <a href="CyberSecurity_completion_certificate.pdf" class="read" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certification-card">
+                <h3>Data Analytics Job Simulation</h3>
+                <p>Issued by: Forage | June 2025</p>
+                <a href="Data_analysis_completion_certificate.pdf" class="read" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certification-card">
+                <h3>Software Engineering Job Simulation</h3>
+                <p>Issued by: Forage | July 2025</p>
+                <a href="Software_completion_certificate.pdf" class="read" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certification-card">
+                <h3>Computing using Python</h3>
+                <p>Issued by: RCCIIT | December–July 2024</p>
+                <a href="certificate.pdf" class="read" target="_blank">View Certificate</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work together</h4>
+            <p>Thank you for visiting my portfolio! I am a passionate and dedicated student currently pursuing my MCA, actively seeking internship or entry-level job opportunities in web development, UI/UX design, and software development. If you think I’d be a good fit for your team or project, please feel free to get in touch. You can contact me via the form below or reach out through email or social media. I look forward to connecting with you!</p>
+
+            <ul class="contact-list">
+                <li><i class='bx bxs-send'></i> pairajonarayan@gmail.com</li>
+                <li><i class='bx bxs-phone'></i> 6295601750</li>
+            </ul>
+
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.linkedin.com/in/joynarayan-paira-01382329b"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="contact-form" action="#" method="post">
+                <input type="text" placeholder="Enter your Name" name="name" required>
+                <input type="email" placeholder="Enter your Email" name="email" required>
+                <input type="text" placeholder="Enter your Subject" name="subject">
+                <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>Developed with love by Joynarayan &copy; 2025</p>
+    </div>
+
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+    <script src="script.js"> </script>
+
+
+</body>
+
+</html>
